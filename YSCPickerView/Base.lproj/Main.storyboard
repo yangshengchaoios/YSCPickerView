@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJC-1X-XxV">
+                                <rect key="frame" x="0.0" y="0.0" width="640" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvu-GM-aP7">
+                                        <rect key="frame" x="0.0" y="0.0" width="640" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNm-zE-jYx">
+                                                <rect key="frame" x="65" y="47" width="220" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="DQg-xE-fco"/>
+                                                    <constraint firstAttribute="width" constant="220" id="ToS-c6-bgx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="show date picker">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showDatePickerButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xxd-th-6C4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ft-kM-OAR">
+                                                <rect key="frame" x="65" y="117" width="220" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LN8-ro-Scz"/>
+                                                    <constraint firstAttribute="width" constant="220" id="o3A-Vj-tqH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="show time picker">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showTimePickerButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oxi-GQ-U5z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-9S-ujQ">
+                                                <rect key="frame" x="40" y="187" width="250" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5Yp-f2-Aor"/>
+                                                    <constraint firstAttribute="width" constant="250" id="DCt-gf-HY4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="show address picker">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showAddressPickerButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ttc-1r-aj4"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="652-DH-v1R">
+                                                <rect key="frame" x="335" y="54" width="138" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8II-pe-Px2">
+                                                <rect key="frame" x="335" y="124" width="136" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tA-nT-HsR">
+                                                <rect key="frame" x="300" y="194" width="185" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="8II-pe-Px2" firstAttribute="leading" secondItem="4ft-kM-OAR" secondAttribute="trailing" constant="50" id="0z6-ie-L0B"/>
+                                            <constraint firstItem="652-DH-v1R" firstAttribute="leading" secondItem="FNm-zE-jYx" secondAttribute="trailing" constant="50" id="4KT-Wr-htf"/>
+                                            <constraint firstItem="8II-pe-Px2" firstAttribute="centerY" secondItem="4ft-kM-OAR" secondAttribute="centerY" constant="-0.5" id="CA2-mL-hQ7"/>
+                                            <constraint firstItem="2tA-nT-HsR" firstAttribute="centerY" secondItem="fWI-9S-ujQ" secondAttribute="centerY" id="SuB-91-Jy0"/>
+                                            <constraint firstItem="652-DH-v1R" firstAttribute="centerY" secondItem="FNm-zE-jYx" secondAttribute="centerY" constant="-0.5" id="UHE-71-yh5"/>
+                                            <constraint firstItem="4ft-kM-OAR" firstAttribute="top" secondItem="FNm-zE-jYx" secondAttribute="bottom" constant="20" id="XgB-Mc-Lc4"/>
+                                            <constraint firstAttribute="width" constant="640" id="Yi8-r9-mKd"/>
+                                            <constraint firstItem="2tA-nT-HsR" firstAttribute="leading" secondItem="fWI-9S-ujQ" secondAttribute="trailing" constant="10" id="aDu-6R-39K"/>
+                                            <constraint firstItem="4ft-kM-OAR" firstAttribute="leading" secondItem="xvu-GM-aP7" secondAttribute="leading" constant="65" id="bZK-Ih-Bc3"/>
+                                            <constraint firstItem="FNm-zE-jYx" firstAttribute="leading" secondItem="xvu-GM-aP7" secondAttribute="leading" constant="65" id="dLT-dn-rAW"/>
+                                            <constraint firstAttribute="height" constant="260" id="gzh-6N-UjX"/>
+                                            <constraint firstItem="fWI-9S-ujQ" firstAttribute="top" secondItem="4ft-kM-OAR" secondAttribute="bottom" constant="20" id="hGF-ly-2Xg"/>
+                                            <constraint firstItem="FNm-zE-jYx" firstAttribute="top" secondItem="xvu-GM-aP7" secondAttribute="top" constant="47" id="j9X-TM-PAL"/>
+                                            <constraint firstItem="fWI-9S-ujQ" firstAttribute="leading" secondItem="xvu-GM-aP7" secondAttribute="leading" constant="40" id="ogc-sP-nQ2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xvu-GM-aP7" secondAttribute="bottom" id="4MG-J2-9W8"/>
+                                    <constraint firstAttribute="trailing" secondItem="xvu-GM-aP7" secondAttribute="trailing" id="7LN-Al-iGt"/>
+                                    <constraint firstItem="xvu-GM-aP7" firstAttribute="top" secondItem="dJC-1X-XxV" secondAttribute="top" id="vNx-oS-hOY"/>
+                                    <constraint firstItem="xvu-GM-aP7" firstAttribute="leading" secondItem="dJC-1X-XxV" secondAttribute="leading" id="zDg-uA-Hyc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dJC-1X-XxV" secondAttribute="trailing" id="6ra-53-gaY"/>
+                            <constraint firstItem="dJC-1X-XxV" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="EwB-RH-tQX"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dJC-1X-XxV" secondAttribute="bottom" id="IN3-Qb-acI"/>
+                            <constraint firstItem="dJC-1X-XxV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="yLw-w6-DiU"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="640" height="600"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="2tA-nT-HsR" id="u61-Xr-xtZ"/>
+                        <outlet property="dateLabel" destination="652-DH-v1R" id="cv3-6P-Lp0"/>
+                        <outlet property="scrollView" destination="dJC-1X-XxV" id="cOS-bK-NtO"/>
+                        <outlet property="showAddressPickerButton" destination="fWI-9S-ujQ" id="DEM-72-pJy"/>
+                        <outlet property="showDatePickerButton" destination="FNm-zE-jYx" id="43W-ob-96q"/>
+                        <outlet property="showTimePickerButton" destination="4ft-kM-OAR" id="M4l-PZ-ibo"/>
+                        <outlet property="timeLabel" destination="8II-pe-Px2" id="MjE-TQ-Jpy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
